@@ -28,6 +28,8 @@
     color: blue;
   }
   &__item {
+    display: flex;
+    gap: 10px;
     border: 1px solid #ccc;
     padding: 5px 10px;
     height: 30px;
@@ -48,6 +50,7 @@
     }
   }
   &__input {
+    width: 100%;
     outline: none;
     border: none;
     background: none;

@@ -1,5 +1,28 @@
 @use "../abstracts";
 .post {
+  &__rate {
+    &-icon {
+      width: 25px;
+      margin-right: 5px;
+      @include abstracts.screen(lg) {
+        margin-right: 0;
+      }
+      @include abstracts.screen(sm) {
+        width: 20px;
+      }
+    }
+    &-info {
+      font-size: 1.8rem;
+      font-weight: 500;
+      @include abstracts.screen(sm) {
+        font-size: 1.6rem;
+      }
+    }
+    align-items: center;
+    justify-content: flex-end;
+    margin-top: 20px;
+    gap: 10px;
+  }
   &__heading {
     font-weight: 700;
     font-size: 3.2rem;
