@@ -134,7 +134,8 @@
 .btn:hover {
   opacity: 0.9;
 }
-.btn[disabled], .btn--disabled {
+.btn[disabled],
+.btn--disabled {
   opacity: 0.5;
   pointer-events: none;
 }
@@ -212,17 +213,21 @@
   margin-top: 20px;
 }
 
-.hero {
-  background: rgba(19, 214, 100, 0.7529411765);
-  opacity: 0.9;
-}
-.hero__wrap {
-  padding: 30px 0;
+.hero__media {
+  width: 100%;
 }
 @media (max-width: 767.98px) {
   .hero__media {
     display: none;
   }
+}
+.hero__img {
+  width: 100%;
+}
+.hero__row {
+  padding: 30px 0;
+  align-items: center;
+  background-image: url(../image/thumb/backgroundform.jpg);
 }
 
 .formbooking {

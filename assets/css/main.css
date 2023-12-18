@@ -187,12 +187,15 @@ select {
   }
 }
 
-.row > *, .container-fluid, .container {
+.row > *,
+.container-fluid,
+.container {
   padding-left: calc(var(--grid-gutter-x) * 0.5);
   padding-right: calc(var(--grid-gutter-x) * 0.5);
 }
 
-.container-fluid, .container {
+.container-fluid,
+.container {
   --grid-gutter-x: 30px;
   --grid-gutter-y: 0;
   width: 100%;
@@ -1629,7 +1632,8 @@ select {
 .btn:hover {
   opacity: 0.9;
 }
-.btn[disabled], .btn--disabled {
+.btn[disabled],
+.btn--disabled {
   opacity: 0.5;
   pointer-events: none;
 }
@@ -1707,17 +1711,21 @@ select {
   margin-top: 20px;
 }
 
-.hero {
-  background: rgba(19, 214, 100, 0.7529411765);
-  opacity: 0.9;
-}
-.hero__wrap {
-  padding: 30px 0;
+.hero__media {
+  width: 100%;
 }
 @media (max-width: 767.98px) {
   .hero__media {
     display: none;
   }
+}
+.hero__img {
+  width: 100%;
+}
+.hero__row {
+  padding: 30px 0;
+  align-items: center;
+  background-image: url(../image/thumb/backgroundform.jpg);
 }
 
 .formbooking {
@@ -2220,11 +2228,14 @@ html {
   height: 100vh;
   display: flex;
 }
-.auth__content, .auth__intro {
+.auth__content,
+.auth__intro {
   flex: 1 0;
   padding: 0 20px;
 }
-.auth .flex-template, .auth .auth__content-inner, .auth .auth__intro {
+.auth .flex-template,
+.auth .auth__content-inner,
+.auth .auth__intro {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -2241,7 +2252,8 @@ html {
   line-height: 144.444%;
   max-width: 412px;
 }
-.auth__intro-arrow, .auth__intro-logo {
+.auth__intro-arrow,
+.auth__intro-logo {
   position: absolute;
   translate: -50%;
   left: 50%;
@@ -2289,7 +2301,8 @@ html {
   font-weight: 500;
   line-height: 146.667%;
 }
-.auth__link, .auth__desc {
+.auth__link,
+.auth__desc {
   color: #0071dc;
   font-size: 1.5rem;
   font-weight: 500;
@@ -2311,7 +2324,8 @@ html {
   font-size: 1.8rem;
   line-height: 144.444%;
 }
-.auth__text .auth__link, .auth__text .auth__desc {
+.auth__text .auth__link,
+.auth__text .auth__desc {
   margin-left: 10px;
 }
 .auth__btn.form__group {
@@ -2443,7 +2457,8 @@ html {
   margin: 40px 0;
 }
 .post__icon {
-  filter: brightness(0) saturate(100%) invert(29%) sepia(79%) saturate(6963%) hue-rotate(348deg) brightness(93%) contrast(100%);
+  filter: brightness(0) saturate(100%) invert(29%) sepia(79%) saturate(6963%)
+    hue-rotate(348deg) brightness(93%) contrast(100%);
   margin-right: 10px;
 }
 .post__link--blue {
