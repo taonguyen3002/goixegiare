@@ -2412,6 +2412,9 @@ html {
     font-size: 1.6rem;
   }
 }
+.post__rate-star {
+  align-items: center;
+}
 .post__heading {
   font-weight: 700;
   font-size: 3.2rem;
