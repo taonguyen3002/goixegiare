@@ -5,6 +5,7 @@
     padding: 10px 0;
   }
   &__inner {
+    position: relative;
     align-items: center;
     @include abstracts.screen(lg) {
       justify-content: space-between;
@@ -30,9 +31,15 @@
       word-wrap: normal;
     }
   }
-  &__item--gt {
-    @include abstracts.screen(lg) {
-      display: none;
+
+  &__item {
+    &:hover .dropdown {
+      display: block;
+    }
+    &--gt {
+      @include abstracts.screen(lg) {
+        display: none;
+      }
     }
   }
 }

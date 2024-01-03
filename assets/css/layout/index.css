@@ -3,6 +3,7 @@
   padding: 10px 0;
 }
 .header__inner {
+  position: relative;
   align-items: center;
 }
 @media (max-width: 991.98px) {
@@ -36,6 +37,9 @@
     font-size: 1.7rem;
     word-wrap: normal;
   }
+}
+.navbar__item:hover .dropdown {
+  display: block;
 }
 @media (max-width: 991.98px) {
   .navbar__item--gt {
