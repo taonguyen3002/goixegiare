@@ -6,11 +6,21 @@
   z-index: 100;
   width: 100%;
   left: 0;
+  @include abstracts.screen(md) {
+    padding-top: 0;
+    display: block;
+    position: static;
+  }
   &__inner {
     border-radius: 20px;
     padding: 30px;
     width: 100%;
     background: #eee;
+    @include abstracts.screen(md) {
+      background: none;
+      padding: 0 0 0 20px;
+      border-radius: 0;
+    }
   }
   :hover {
     display: block;
@@ -23,6 +33,11 @@
     overflow-y: auto;
     width: 202px;
     border-right: 2px solid #8f8f8f;
+    @include abstracts.screen(md) {
+      border: none;
+      width: 100%;
+      height: auto;
+    }
   }
 }
 .sub-menu {
@@ -34,6 +49,10 @@
   overflow-y: auto;
   @include abstracts.screen(lg) {
     grid-template-columns: repeat(2, 1fr);
+  }
+  @include abstracts.screen(md) {
+    position: static;
+    grid-template-columns: repeat(1, 1fr);
   }
 }
 .menu-column {
@@ -48,6 +67,9 @@
   }
   &__list {
     margin-top: 20px;
+    @include abstracts.screen(md) {
+      margin-top: 10px;
+    }
   }
   &__link {
     padding: 7px 0;
