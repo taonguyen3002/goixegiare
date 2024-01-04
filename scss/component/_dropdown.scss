@@ -1,3 +1,4 @@
+@use "../abstracts";
 .dropdown {
   padding-top: 30px;
   display: none;
@@ -20,24 +21,27 @@
   &__main {
     height: calc(min(500px, 100vh - 160px) - 60px);
     overflow-y: auto;
-    width: 232px;
-    border-right: 2px solid #fff;
+    width: 202px;
+    border-right: 2px solid #8f8f8f;
   }
 }
 .sub-menu {
   display: none;
   position: absolute;
   grid-template-columns: repeat(3, 1fr);
-  inset: 0 0 0 262px;
+  inset: 0 0 0 232px;
   max-height: calc(min(500px, 100vh - 160px) - 60px);
   overflow-y: auto;
+  @include abstracts.screen(lg) {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 .menu-column {
   + .menu-column {
     margin-top: 30px;
   }
   &__heading {
-    color: orangered;
+    color: #0071dc;
     font-size: 1.9rem;
     font-weight: 500;
     line-height: 150%;
