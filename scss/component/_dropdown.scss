@@ -8,7 +8,6 @@
   left: 0;
   @include abstracts.screen(md) {
     padding-top: 0;
-    display: block;
     position: static;
   }
   &__inner {

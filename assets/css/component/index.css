@@ -770,7 +770,6 @@
 @media (max-width: 767.98px) {
   .dropdown {
     padding-top: 0;
-    display: block;
     position: static;
   }
 }
