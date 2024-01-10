@@ -111,8 +111,12 @@
   &__desc {
     font-weight: 500;
     font-size: 1.5rem;
-    line-height: 1.44;
+    line-height: 1.6;
     margin-top: 10px;
+    @include abstracts.screen(lg) {
+      font-size: 1.3rem;
+      line-height: 1.45;
+    }
   }
   &__end {
     font-weight: 500;

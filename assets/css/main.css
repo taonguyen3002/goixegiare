@@ -2679,8 +2679,14 @@ html {
 .post__desc {
   font-weight: 500;
   font-size: 1.5rem;
-  line-height: 1.44;
+  line-height: 1.6;
   margin-top: 10px;
+}
+@media (max-width: 991.98px) {
+  .post__desc {
+    font-size: 1.3rem;
+    line-height: 1.45;
+  }
 }
 .post__end {
   font-weight: 500;
